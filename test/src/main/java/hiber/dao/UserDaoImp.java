@@ -59,13 +59,4 @@ public class UserDaoImp implements UserDao {
       TypedQuery<Car> query=sessionFactory.openSession().createQuery("from Car where series ="+car.getSeries()+" and model = '"+car.getModel()+"'");
       return query.getSingleResult();
    }
-
-
-
-
-/*   public String getName(){
-      return sessionFactory.getCurrentSession().createQuery("from User where id"+5)
-   }*/
-
-
 }
